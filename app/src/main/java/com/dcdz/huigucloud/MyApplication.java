@@ -7,6 +7,7 @@ import android.util.Log;
 
 import com.dcdz.loglibrary.CrashHandler;
 import com.dcdz.loglibrary.Log4jConfigure;
+import com.hikvision.netsdk.HCNetSDK;
 import com.zhouyou.http.EasyHttp;
 import com.zhouyou.http.cache.converter.SerializableDiskConverter;
 import com.zhouyou.http.model.HttpHeaders;
@@ -52,6 +53,13 @@ public class MyApplication extends Application {
 
         //初始化数据库LitePal
         LitePal.initialize(this);
+
+        //初始化海康威视摄像头SDK
+        if (!HCNetSDK.getInstance().NET_DVR_Init()) {
+            log.error("HCNetSDK init is failed!");
+        }
+        log.error("HCNetSDK init is success!");
+        HCNetSDK.getInstance().NET_DVR_SetLogToFile(3, "/mnt/sdcard/sdklog/", true);
 
         //初始化网络请求
         EasyHttp.init(this);

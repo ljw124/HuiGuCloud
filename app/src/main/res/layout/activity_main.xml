@@ -7,13 +7,9 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
     <Button
-        android:id="@+id/btn_take_photo"
+        android:id="@+id/btn_address_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="拍照"/>
+        android:text="解析设备IP和端口"/>
 
-    <ImageView
-        android:id="@+id/iv_photo"
-        android:layout_width="300dp"
-        android:layout_height="300dp" />
 </LinearLayout>

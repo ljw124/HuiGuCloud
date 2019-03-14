@@ -1,0 +1,1 @@
+{"dev_auth_mode":1,"dev_deviceLicense":"KrvbxU8VpaHY2hjzHucjuU","dev_deviceName":"898607b6121700337187","dev_firmwareversion":"1.0.8.1_hk","dev_mac":"DA:5C:A5:A2:D1:58","dev_nickname":"设备昵称","dev_productKey":"bdee0f3be78d4ab5b69d04c74"}
